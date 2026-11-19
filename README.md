@@ -146,6 +146,28 @@ The report displays the following approximate unfiltered values for the 2020–2
 
 Values are rounded as displayed in Power BI and change with filter selections.
 
+## Key insights and business implications
+
+The published 2020–2021 dataset provides a consolidated view of commercial performance. The following figures use the unfiltered totals recorded in the repository's [QA results](06_Validation/QA_results.json); they are descriptive observations, not causal conclusions.
+
+| Observation | Published result | Business implication |
+| --- | ---: | --- |
+| Revenue against budget | ₽132.15M actual / ₽214.60M budget (**61.6% attainment**) | Review budget assumptions and identify which periods or departments contribute most to the gap. |
+| Gross profitability | ₽41.52M gross profit; **31.4% gross margin** | Track margin alongside revenue to distinguish sales growth from profitable growth. |
+| Payments and receivables | ₽101.55M recorded payments; **₽30.60M open balance** | Prioritize receivables monitoring and segment unpaid balances by customer and invoice age before drawing conclusions about collection risk. |
+| Marketing investment | **₽6.02M** recorded spend | Compare campaign costs with lead volumes and qualification outcomes to assess channel efficiency. |
+
+**Interpretation:** Revenue is approximately **38.4% below the recorded revenue budget**. The open balance is approximately **23.2% of recorded invoice revenue** at the dataset's reporting snapshot; this is not an overdue-debt rate, because invoice due dates and ageing are not established by these aggregate totals.
+
+### Questions for management
+
+- Which departments and months explain the largest share of the budget variance?
+- Are lower-margin segments contributing disproportionately to revenue?
+- How much of the outstanding balance is overdue versus not yet due?
+- Which marketing channels produce qualified leads at the most efficient cost?
+
+These questions can be investigated with the dashboard filters and underlying data; the aggregate figures above alone do not establish their answers.
+
 ## Repository structure
 
     mrdoors-commercial-intelligence-powerbi/

@@ -1,0 +1,13 @@
+{
+  "name": "MrDoors Midnight Accessible",
+  "dataColors": [
+    "#56D9F0",
+    "#40D6B2",
+    "#F5C46B",
+    "#8FA8F7",
+    "#E18DAD"
+  ],
+  "background": "#101C30",
+  "foreground": "#FFFFFF",
+  "tableAccent": "#56D9F0"
+}

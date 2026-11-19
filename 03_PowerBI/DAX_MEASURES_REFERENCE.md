@@ -1,0 +1,30 @@
+# Measures
+
+- **Revenue RUB**: `SUM(FactSales[RevenueRUB])`
+- **COGS RUB**: `SUM(FactSales[COGSRUB])`
+- **Gross Profit RUB**: `[Revenue RUB] - [COGS RUB]`
+- **Gross Margin %**: `DIVIDE([Gross Profit RUB], [Revenue RUB])`
+- **Invoices**: `DISTINCTCOUNT(FactSales[InvoiceID])`
+- **Average Invoice RUB**: `DIVIDE([Revenue RUB], [Invoices])`
+- **Customers**: `DISTINCTCOUNT(FactSales[CustomerID])`
+- **Revenue Budget RUB**: `SUM(FactBudget[RevenueBudgetRUB])`
+- **Revenue vs Budget RUB**: `[Revenue RUB] - [Revenue Budget RUB]`
+- **Budget Achievement %**: `DIVIDE([Revenue RUB], [Revenue Budget RUB])`
+- **Opex RUB**: `SUM(FactExpenses[AmountRUB])`
+- **Operating Contribution RUB**: `[Gross Profit RUB] - [Opex RUB]`
+- **Payments RUB**: `SUM(FactPayments[PaymentAmountRUB])`
+- **Open Receivables RUB**: `SUM(FactInvoiceBalance[OpenBalanceRUB])`
+- **Leads**: `DISTINCTCOUNT(FactLeads[LeadID])`
+- **Calls**: `COUNTROWS(FactCalls)`
+- **Connected Calls**: `CALCULATE([Calls], FactCalls[ConnectedFlag] = 1)`
+- **Call Connect Rate %**: `DIVIDE([Connected Calls], [Calls])`
+- **Qualified Calls**: `CALCULATE([Calls], FactCalls[QualifiedOutcomeFlag] = 1)`
+- **Call Qualification Rate %**: `DIVIDE([Qualified Calls], [Connected Calls])`
+- **Average Talk Seconds**: `AVERAGE(FactCalls[TalkSeconds])`
+- **Marketing Spend RUB**: `SUM(FactMarketingSpend[SpendRUB])`
+- **Cost per Lead RUB**: `DIVIDE([Marketing Spend RUB], [Leads])`
+- **Orders**: `DISTINCTCOUNT(DimOrder[OrderID])`
+- **Delivered Orders**: `DISTINCTCOUNT(FactDeliveries[OrderID])`
+- **On-Time Deliveries**: `CALCULATE([Delivered Orders], FactDeliveries[OnTimeFlag] = 1)`
+- **On-Time Delivery %**: `DIVIDE([On-Time Deliveries], [Delivered Orders])`
+- **Tender Bid Value RUB**: `SUM(FactTenders[BidValueRUB])`

@@ -2,9 +2,15 @@ Mr.Doors | Commercial Intelligence & Business Performance
 
 Sales · Finance · Customer Intelligence · Marketing · Telemarketing · Operations · Tenders
 
-2020–2021 | Power BI portfolio implementation: 2026
+Reporting period: 2020–2021 | Power BI dashboard developed: 2026
 
 Power BI · SQL · DAX · Data Modeling · Business Intelligence
+
+GitHub LinkedIn Power BI
+
+View dashboards · Power BI files · SQL queries · Data dictionary · Validation
+
+Executive Overview dashboard
 
 ────────
 
@@ -12,7 +18,7 @@ Project overview
 
 I worked in business development and marketing analytics at Mr.Doors from June 2019 to January 2022. My work involved commercial reporting, performance analysis and supporting decisions across sales and marketing activities.
 
-In 2026, I revisited this business context and developed an integrated eight-page Power BI report, bringing together commercial, financial, customer, marketing, telemarketing, delivery and tender analytics. The project illustrates how separate operational reporting domains can be explored through SQL, modeled for BI and presented in an interactive reporting environment.
+In 2026, I developed an integrated eight-page Power BI report for the 2020–2021 reporting period, bringing together commercial, financial, customer, marketing, telemarketing, delivery and tender analytics. The project demonstrates my approach to SQL analysis, data modeling, KPI development and interactive business reporting.
 
 Dashboard gallery
 
@@ -79,7 +85,7 @@ Data and analytical workflow
 
 The repository contains 19 analytical tables covering customers, products, orders, sales, invoicing, budgets, expenses, payments, campaigns, leads, calls, deliveries and tenders.
 
-1. Historical reporting context. The business questions and reporting domains reflect my earlier commercial analytics experience.
+1. Reporting requirements. I defined business questions and reporting domains drawing on my commercial analytics experience.
 
 2. SQL analysis. SQL scripts provide exploratory aggregations, joins and data-quality checks. The SQLite database allows the queries to be reviewed separately from Power BI.
 
@@ -91,11 +97,11 @@ The repository contains 19 analytical tables covering customers, products, order
 
 6. Quality assurance. SQL checks and validation outputs support reconciliation of key totals. Interactive behavior, filtered totals and local refresh should be tested in Power BI Desktop.
 
-> SQL is included as an analysis and validation layer. The Power BI model may load the CSV files directly; SQL should not be described as the Power BI ingestion pipeline unless that is verified in Power Query.
+Implementation note: SQL scripts document analysis and validation; Power BI source connections can be inspected in Power Query.
 
 Selected dashboard metrics
 
-The report export displays the following approximate unfiltered values for the 2020–2021 analytical dataset:
+The report export displays the following approximate unfiltered values for the 2020–2021 reporting period:
 
 |KPI               |Displayed value|
 |------------------|--------------:|
@@ -106,7 +112,7 @@ The report export displays the following approximate unfiltered values for the 2
 |Revenue budget    |₽215M          |
 |Budget achievement|61.6%          |
 
-These are rounded values from the report export, not claims about audited corporate results. Figures can change with slicer selections.
+Values are rounded as displayed in Power BI and can change with slicer selections.
 
 Repository structure
 
@@ -125,7 +131,7 @@ How to explore the project
 2. Review the data: Inspect the CSV files in 01_Data_CSV/ and the field definitions in 05_Documentation/.
 3. Explore SQL: Open the SQLite database with a compatible tool such as DBeaver, then review the analysis and validation scripts in 02_SQL/.
 4. Open Power BI: Download the working .pbix from 03_PowerBI/ and open it in Power BI Desktop on Windows. Update local CSV source paths if prompted, refresh, and test slicers.
-5. Check reproducibility: Compare results against the files in 06_Validation/. Static exports do not independently establish that every filter or measure is correct.
+5. Check reproducibility: Compare results against the files in 06_Validation/. Use the live report to test interactive filters and measures.
 
 Skills demonstrated
 
@@ -136,4 +142,4 @@ Author
 Anton Shuleshov
 Business Development & Marketing Analytics | Business Intelligence & Data Analytics
 
-GitHub profile · LinkedIn
+GitHub profile · LinkedIn profile

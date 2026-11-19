@@ -1,0 +1,5 @@
+Tables: 19
+Rows: 16106
+Revenue RUB: 132149122.92
+Gross profit RUB: 41523872.92
+Invoice reconciliation mismatches: 0

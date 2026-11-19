@@ -160,7 +160,7 @@ Values are rounded as displayed in Power BI and change with filter selections.
     |   Power BI report, theme and DAX reference
     |
     |-- 04_Dashboards/
-    |   Eight dashboard screenshots and PDF export
+    |   Eight dashboard screenshots
     |
     |-- 05_Documentation/
     |   Data dictionary, model and workflow
@@ -174,7 +174,7 @@ Values are rounded as displayed in Power BI and change with filter selections.
 
 **1. Explore the dashboards**
 
-Browse the eight images above or open the PDF report in [04_Dashboards](04_Dashboards/).
+Browse the eight images above in [04_Dashboards](04_Dashboards/).
 
 **2. Review the data**
 
